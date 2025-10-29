@@ -12,10 +12,10 @@ const GuitarList = () => {
   return (
     <>
       <section className="max-w-7xl mx-auto py-16 px-8 grid grid-cols-1 gap-y-4 gap-x-12 sm:grid-cols-2 sm:gap-y-12 lg:grid-cols-2 flex-column">
-        {guitars.length === 0 ? (
+        {guitars.length === 0 ? (//en caso de que no haya productos o servicios
           <p>No hay guitarras</p>
-        ) : (
-          guitars.map(guitar => {
+        ) : (//de lo contrario, si hay productos o servicios
+          guitars.map(guitar => {//recorremos el array de productos o servicios
             return (
               <div key={guitar._id} className="border flex flex-col">
                 <div className="bg-gray-200">
