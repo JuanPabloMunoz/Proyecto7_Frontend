@@ -26,7 +26,7 @@ const index = () => {
   }, []);
 
   const handleChange = (e) => {
-    setQuantity(Number(e.target.value));
+    setQuantity(Number(e.target.value)); //paso el valor string a numerico
   };
 
   const handleSubmit = async (e) => {

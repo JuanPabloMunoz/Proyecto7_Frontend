@@ -11,14 +11,14 @@ export default function index() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    getCheckoutSession();
+    getCheckoutSession();//abre la sesión de pago de stripe
   };
 
-  useEffect(() => {
+  useEffect(() => {//redirecciona a la url de sesión de pago
     if (sessionURL) window.location.href = sessionURL;
   }, [sessionURL]);
 
-  useEffect(() => {
+  useEffect(() => {//calcula el total del carrito
     const reduceTotalFromOrder = () => {
       return cart.reduce((acc, cv) => {
         const updatedQuantity = cv.price * cv.quantity;

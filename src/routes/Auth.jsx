@@ -7,7 +7,7 @@ export default function AuthRoute({ component: Component }) {
     const ctx = useContext(UserContext);
     const { authState, verifyUser } = ctx;
 
-    useEffect(() => {
+    useEffect(() => {//Verifica si el usuario está autenticado dependiendo del estado mantiene en perfil o en login
         verifyUser();
     }, [authState])
 
