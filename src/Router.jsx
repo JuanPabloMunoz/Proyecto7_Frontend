@@ -10,7 +10,7 @@ import SingleGuitar from "./components/Guitar/Single";
 import Profile from "./components/Profile";
 import Checkout from "./components/Checkout";
 import SuccessPage from './components/Success';
-import CancelPage from './components/Cancel';
+//import CancelPage from './components/Cancel';
 import AuthRoute from "./routes/Auth";
 import PrivateRoute from "./routes/Private";
 
