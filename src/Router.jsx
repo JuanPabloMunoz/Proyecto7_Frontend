@@ -39,7 +39,7 @@ const Router = () => {
                 <Route path="guitarras" element={<GuitarList />} />
                 <Route path="guitarras/:slug" element={<SingleGuitar />} />
                 <Route path="pago-exitoso" element={<SuccessPage />} />
-                <Route path="pago-cancelado" element={<CancelPage />} />
+                <Route path="pago-cancelado" element={<Home />} />
               </Route>
             </Routes>
           </BrowserRouter>
