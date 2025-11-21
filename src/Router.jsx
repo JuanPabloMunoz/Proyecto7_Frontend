@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import UserState from "./contexts/User/UserState";
+import UserState from "./contexts/user/UserState";
 import GuitarState from "./contexts/Guitar/GuitarState";
 import Layout from "./components/Layout";
 import Home from "./components/Home";
